@@ -1,0 +1,68 @@
+Approach to Solution :: 
+
+I used a very standard and generic method for the same :: 
+
+Here's a more concise explanation focusing on the technologies used:
+
+Requests:
+
+Used to fetch the webpage content from a given URL.
+Handles network-related exceptions to ensure robustness.
+Newspaper3k:
+
+Parses the article content, extracting the title and text.
+Facilitates easy and reliable text extraction from web articles.
+Spacy:
+
+Used for advanced natural language processing tasks.
+Counts the number of sentences in the article for readability metrics.
+Syllapy:
+
+Counts the number of syllables in words.
+Helps in identifying complex words (words with more than two syllables).
+String Module:
+
+Used to remove punctuation from text.
+Assists in cleaning the text for further analysis.
+File Handling:
+
+Reads stopwords from multiple files, including different encoding formats (e.g., latin-1 for some files).
+Ensures robust handling of file-related exceptions.
+Sentiment Analysis:
+
+Uses positive and negative word lists to calculate sentiment scores.
+Computes positive_score, negative_score, polarity_score, and subjectivity_score.
+Readability Metrics:
+
+Calculates percentage_of_complex_words, Fog_index, Average_no_of_words, Average_word_length, and Average_sentence_length.
+Personal Pronoun Counting:
+
+Identifies and counts personal pronouns in the text.
+Error Handling:
+
+Includes comprehensive exception handling for network requests, file operations, and text processing to ensure continuous function execution despite errors.
+Output:
+
+Collects and prints a list of computed metrics, providing a comprehensive analysis of the article.
+
+
+/// Some points to Note :: 
+
+1.Some links in input excel file were broken , so I handled them with generating an exception 
+
+2.Some files in stopWords and NegativeWords were not in Utf-8 format , so they are explicitly handled
+
+3. I generated the text output then manually converted it into csv format , automating it was possible but lengthy .
+
+4. Prefer running on google Collab rather than Vs code or any other editor as it may not be compatible with those.
+
+//// Requirments to run :: 
+
+As it is on google collab you just have to run the cells and it would be fine , you might face some issue with file locations so an easy solution for that is to download the files of the drive seperately and import manually into google collab then it would work just fine.
+
+Even then the list of files I imported are ::: 
+
+Input excel file , stopwords , negative and postive words . 
+
+
+
